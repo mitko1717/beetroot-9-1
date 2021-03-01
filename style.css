@@ -3,6 +3,16 @@
   src: url("fonts/ralaway.heavy.ttf");
 }
 
+@font-face {
+font-family: 'fontf5c9c1aa2ac56e1f75b17c63c0a594bc';
+    
+    src:    url('https://nomail.com.ua/files/eot/f5c9c1aa2ac56e1f75b17c63c0a594bc.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/f5c9c1aa2ac56e1f75b17c63c0a594bc.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/f5c9c1aa2ac56e1f75b17c63c0a594bc.woff2') format('woff2');
+}
+
+@font-face { font-family: 'Raleway-Bold';  src: local('Raleway-Bold'), url('https://nomail.com.ua/files/woff/f5c9c1aa2ac56e1f75b17c63c0a594bc.woff') format('woff'); }
+
 * {
   margin: 0;
   padding: 0;
@@ -60,7 +70,7 @@
 .content__title {
   width: 287px;
   color: #262626;
-  font-family: "Raleway - Heavy";
+  font-family: "Raleway";
   font-size: 60px;
   font-weight: 900;
   line-height: 25px;
