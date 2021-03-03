@@ -23,6 +23,7 @@ font-family: 'fontf5c9c1aa2ac56e1f75b17c63c0a594bc';
   display: flex;
   flex-direction: column;
   background-image: url(img/img.png);
+  background-size: cover;
   height: 1087px;
   margin-bottom: -85px;
 }
