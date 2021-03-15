@@ -40,15 +40,38 @@
   justify-content: space-between;
 }
 
+.slideout-sidebar {
+  display: none;
+}
+
+.slideout-sidebar__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  list-style: none;
+  color: #262626;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .header__list {
   display: flex;
 }
 
 .list__items {
   display: flex;
+  flex-direction: row;
   align-items: center;
   width: 557px;
   justify-content: space-between;
+}
+
+.material-icons {
+  display: none;
 }
 
 .items__item {
@@ -62,11 +85,19 @@
   line-height: 25px;
   text-align: right;
   text-transform: uppercase;
+  border-top: 5px solid rgba(255, 96, 51, 0);
+}
+
+.menu-icon {
+  display: none;
+}
+
+.input__menu {
+  display: none;
 }
 
 .items__item:hover {
   border-top: 5px solid #ff6033;
-  margin-top: -10px;
   cursor: pointer;
 }
 
@@ -682,18 +713,86 @@ input[type="number"]::-webkit-outer-spin-button {
   right: 630px;
 }
 
+
 @media screen and (max-width: 768px) and (min-width: 360px) {
+
+  /* MENU */
+
+  .header__list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    top: 45px;
+    width: 30px;
+    height: 30px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    
+  }
+
+  .slideout-sidebar {
+  position: fixed;
+    height: 150px;
+    width: 100px;
+    transition: all 300ms ease-in-out;
+    top: 50px;
+    z-index: 1;
+    right: -200px;
+    display: inline-block;
+  }
+
+  .slideout-sidebar__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin: 0;
+    padding: 0:
+  }
+
+  .item {
+    display: inline;
+    font-size: 14px;
+    cursor: pointer
+  }
+
+  .item:hover {
+    color: rgb(253,97, 61);
+    border: none;
+  }
+
+  .input__menu:checked + .menu-icon{
+    color: rgb(253,97, 61);
+  }
+
+  .input__menu:checked ~ .slideout-sidebar {
+    right: 0px;
+  }
+
+  .input__menu:checked + .menu-icon {
+    right: 80px;
+  }
+
+  /* MENU */
+
   .section-one {
     height: 600px;
   }
   .section-one__header {
-    margin: 50px 5px 0 5px;
+    margin: 20px 5px 0 5px;
     display: flex;
     justify-content: space-between;
   }
 
   .logo__img {
-    transform: scale(0.6);
+    padding-top: 10px;
+    transform: scale(0.8);
   }
 
   .list__items {
@@ -708,7 +807,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .section-one__content {
-    margin: 60px 0 0 30px;
+    margin: 50px 0 0 30px;
   }
 
   .section-one__content .content__title {
@@ -717,10 +816,10 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .section-one__content .content__text {
-    width: 390px;
-    height: 70px;
+    width: 350px;
+    height: 80px;
     font-size: 15px;
-    margin: 20px 0 20px;
+    margin: 20px 0 70px;
   }
 
   .button {
@@ -1058,8 +1157,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .desc__thin {
     font-size: 17px;
-    font-family: "Raleway";
-    font-weight: 300;
   }
 
   .footer {
@@ -1074,6 +1171,72 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  /* MENU */
+
+  .header__list {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    
+  }
+
+  .slideout-sidebar {
+  position: absolute;
+    height: 200px;
+    width: 100px;
+    transition: all 300ms ease-in-out;
+    top: 55px;
+    z-index: 1;
+    right: -200px;
+    display: inline-block;
+  }
+
+  .slideout-sidebar__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin: 0;
+    padding: 0:
+  }
+
+  .item {
+    display: inline;
+    font-size: 14px;
+    cursor: pointer
+  }
+
+  .item:hover {
+    color: rgb(253,97, 61);
+    border: none;
+  }
+
+
+  .input__menu:checked + .menu-icon{
+    color: rgb(253,97, 61);
+  }
+
+  .input__menu:checked ~ .slideout-sidebar {
+    right: 50px;
+  }
+
+  .input__menu:checked + .menu-icon {
+    right: 150px;
+  }
+
+  /* MENU */
+
   .section-one {
     height: 800px;
   }
@@ -1833,5 +1996,3 @@ input[type="number"]::-webkit-outer-spin-button {
     position: absolute;
   }
 }
-
-

@@ -26,6 +26,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -35,6 +39,7 @@
           <div class="header__logo">
             <img class="logo__img" src="img/logo.png" alt="logo" />
           </div>
+
           <div class="header__list">
             <ul class="list__items">
               <li class="items__item">home</li>
@@ -44,6 +49,25 @@
               <li class="items__item">blog</li>
               <li class="items__item">contact</li>
             </ul>
+          </div>
+          <div class="input__container">
+            <input class="input__menu" type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon"
+              ><span class="material-icons"> menu </span></label
+            >
+            <!-- СОЗДАЛ ВТОРОЙ СПИСОК, ПОТОМУ ЧТО ПОЛНОСТЬЮ ЗАПУТАЛСЯ  ВО ВСЕХ КЛАССАХ И ЧТО К ЧЕМУ ПРИВЯЗЫВАТЬ. 
+            ЗНАЮ, ЧТО ТАК ДЕЛАТЬ ПЛОХО -->
+
+            <div class="slideout-sidebar">
+              <ul class="slideout-sidebar__items">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">gallery</li>
+                <li class="item">blog</li>
+                <li class="item">contact</li>
+              </ul>
+            </div>
           </div>
         </header>
 
