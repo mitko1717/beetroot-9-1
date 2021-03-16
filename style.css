@@ -737,7 +737,7 @@ input[type="number"]::-webkit-outer-spin-button {
     position: fixed;
     z-index: 2;
     right: 20px;
-    top: 45px;
+    top: 35px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     
@@ -748,7 +748,7 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 150px;
     width: 100px;
     transition: all 0.3s ease-in-out;
-    top: 50px;
+    top: 40px;
     z-index: 1;
     right: -200px;
     display: block;
@@ -781,13 +781,13 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .input__menu:checked ~ .slideout-sidebar {
-    right: 20px;
+    right: 0px;
     display: inline-block;
     transition: all 0.3s ease-in-out;
   }
 
   .input__menu:checked + .menu-icon {
-    right: 100px;
+    right: 80px;
   }
 
   /* MENU */
@@ -796,7 +796,7 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 600px;
   }
   .section-one__header {
-    margin: 20px 5px 0 5px;
+    margin: 5px 5px 0 5px;
     display: flex;
     justify-content: space-between;
   }
@@ -828,7 +828,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .section-one__content .content__text {
-    width: 300px;
+    width: 280px;
     height: 80px;
     font-size: 15px;
     margin: 20px 0 70px;
